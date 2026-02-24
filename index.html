@@ -45,20 +45,13 @@
       display:grid; place-items:center; font-weight:900; letter-spacing:.5px;
     }
     .logoimg{
-  height:60px;       /* masaüstü */
-  width:auto;        /* oran bozulmaz */
-  max-width:320px;   /* çok uzayıp taşmasın */
+  height:auto;
+  max-width:320px;   /* Masaüstü ideal */
+  display:block;
   object-fit:contain;
   background:transparent;
   border:0;
   padding:0;
-  display:block;
-}
-@media (max-width:600px){
-  .logoimg{
-    height:48px;
-    max-width:240px;
-  }
 }
     .brand h1{margin:0; font-size:16px; letter-spacing:.3px}
     .brand p{margin:2px 0 0; font-size:12.5px; color:var(--muted)}
@@ -130,8 +123,7 @@
     }
     @media (max-width:600px){
   .logoimg{
-    height:56px;
-    max-width:96px;
+    max-width:220px;
   }
 }
   </style>
@@ -230,6 +222,7 @@
 </body>
 
 </html>
+
 
 
 
