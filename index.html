@@ -123,9 +123,38 @@
       padding-left:10px;
     }
     @media (max-width:600px){
+  /* Header’ı iki satıra indir */
+  .nav{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+
+  /* Logo + yazı aynı satırda düzgün dursun */
+  .brand{
+    width:100%;
+    gap:12px;
+  }
+
+  /* Logo mobilde küçülsün */
   .logoimg{
-    height:40px;      /* mobil ideal */
-    max-width:210px;  /* mobilde taşmayı engeller */
+    height:40px;
+    width:auto !important;
+    max-width:180px;
+  }
+
+  /* Yazılar sıkışmasın, satır sonuna geçebilsin */
+  .brand h1{
+    font-size:16px;
+  }
+  .brand p{
+    font-size:12px;
+    line-height:1.35;
+  }
+
+  /* Butonlar alt satırda yan yana/alt alta rahat dursun */
+  .actions{
+    width:100%;
   }
 }
   </style>
@@ -224,6 +253,7 @@
 </body>
 
 </html>
+
 
 
 
