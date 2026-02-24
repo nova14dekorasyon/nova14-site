@@ -40,6 +40,15 @@
       background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,0));
       display:grid; place-items:center; font-weight:900; letter-spacing:.5px;
     }
+    .logoimg{
+  width:44px;
+  height:44px;
+  border-radius:12px;
+  border:1px solid rgba(34,48,78,.9);
+  background:rgba(255,255,255,.04);
+  object-fit:contain;
+  padding:6px;
+}
     .brand h1{margin:0; font-size:16px; letter-spacing:.3px}
     .brand p{margin:2px 0 0; font-size:12.5px; color:var(--muted)}
     .actions{display:flex; gap:10px; flex-wrap:wrap}
@@ -116,7 +125,7 @@
 
     <header class="nav">
       <div class="brand">
-        <div class="mark">N14</div>
+        <img class="logoimg" src="logo.png" alt="Nova14 Dekorasyon logo" />
         <div>
           <h1>Nova14 Dekorasyon</h1>
           <p>Bolu Merkez • Fayans & Seramik • Banyo / WC Yenileme</p>
@@ -202,4 +211,5 @@
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
