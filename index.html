@@ -45,14 +45,15 @@
       display:grid; place-items:center; font-weight:900; letter-spacing:.5px;
     }
     .logoimg{
-  width:96px;
-  height:96px;
-  border-radius:16px;
+  height:64px;          /* Logo yüksekliği */
+  width:auto;           /* En-boy oranını koru (çok önemli) */
+  max-width:260px;      /* Çok uzayıp taşmasın */
+  border-radius:14px;
   border:1px solid rgba(34,48,78,.9);
-  background:rgba(255,255,255,.06);
-  object-fit:contain;
-  padding:10px;
-  box-shadow: 0 10px 28px rgba(0,0,0,.25);
+  background:rgba(255,255,255,.92); /* Logo koyuysa beyaz zemin net gösterir */
+  padding:10px 12px;
+  object-fit:contain;   /* Görselin tamamını göster */
+  box-shadow: 0 10px 28px rgba(0,0,0,.20);
 }
     .brand h1{margin:0; font-size:16px; letter-spacing:.3px}
     .brand p{margin:2px 0 0; font-size:12.5px; color:var(--muted)}
@@ -124,10 +125,9 @@
     }
     @media (max-width:600px){
   .logoimg{
-    width:72px;
-    height:72px;
-    padding:8px;
-    border-radius:14px;
+    height:52px;
+    max-width:210px;
+    padding:8px 10px;
   }
 }
   </style>
@@ -226,6 +226,7 @@
 </body>
 
 </html>
+
 
 
 
