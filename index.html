@@ -45,8 +45,9 @@
       display:grid; place-items:center; font-weight:900; letter-spacing:.5px;
     }
     .logoimg{
-  height:auto;
-  max-width:320px;   /* Masaüstü ideal */
+  height:56px;        /* masaüstü/normal */
+  width:auto;         /* oran bozulmasın */
+  max-width:300px;    /* yatay logo için sınır */
   display:block;
   object-fit:contain;
   background:transparent;
@@ -123,7 +124,8 @@
     }
     @media (max-width:600px){
   .logoimg{
-    max-width:220px;
+    height:40px;      /* mobil ideal */
+    max-width:210px;  /* mobilde taşmayı engeller */
   }
 }
   </style>
@@ -222,6 +224,7 @@
 </body>
 
 </html>
+
 
 
 
