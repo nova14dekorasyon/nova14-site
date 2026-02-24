@@ -45,15 +45,20 @@
       display:grid; place-items:center; font-weight:900; letter-spacing:.5px;
     }
     .logoimg{
-  height:72px;        /* Bu logo için masaüstünde ideal */
-  width:auto;         /* Oranı bozma */
-  max-width:120px;    /* Kareye yakın logoda kontrol */
-  background:transparent; /* kutusuz */
-  padding:0;
+  width:80px;
+  height:80px;
+  object-fit:contain;
+  background:transparent;
   border:0;
-  box-shadow:none;
-  object-fit:contain; /* kesme yapma */
+  padding:0;
+  border-radius:14px;
   display:block;
+}
+@media (max-width:600px){
+  .logoimg{
+    width:64px;
+    height:64px;
+  }
 }
     .brand h1{margin:0; font-size:16px; letter-spacing:.3px}
     .brand p{margin:2px 0 0; font-size:12.5px; color:var(--muted)}
@@ -225,6 +230,7 @@
 </body>
 
 </html>
+
 
 
 
